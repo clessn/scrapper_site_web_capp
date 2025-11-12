@@ -1,0 +1,19 @@
+/* Font replacement - Replace Typekit Halyard Display with Google Fonts Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Override font-family for all elements using halyard-display */
+body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* Ensure headings use Inter */
+h1, h2, h3, h4, h5, h6,
+.heading-font,
+[class*="heading"] {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* Override any remaining halyard-display references */
+*[style*="halyard-display"] {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+}
