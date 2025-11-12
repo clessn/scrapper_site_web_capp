@@ -1,15 +1,36 @@
-/* Font replacement - Replace Typekit Halyard Display with Google Fonts Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=block');
+/* Font replacement - Replace Typekit Halyard Display with locally hosted Inter */
 
-/* Prevent flash of unstyled text while fonts load */
-html.wf-loading * {
-  opacity: 0;
+/* Define Inter font faces with local files */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/inter-regular.woff2') format('woff2');
 }
 
-html.wf-active *,
-html.wf-inactive * {
-  opacity: 1;
-  transition: opacity 0.2s ease-in;
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/inter-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/inter-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/inter-700.woff2') format('woff2');
 }
 
 /* Override font-family for all elements using halyard-display */
