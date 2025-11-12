@@ -1,5 +1,16 @@
 /* Font replacement - Replace Typekit Halyard Display with Google Fonts Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=block');
+
+/* Prevent flash of unstyled text while fonts load */
+html.wf-loading * {
+  opacity: 0;
+}
+
+html.wf-active *,
+html.wf-inactive * {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
 
 /* Override font-family for all elements using halyard-display */
 body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
